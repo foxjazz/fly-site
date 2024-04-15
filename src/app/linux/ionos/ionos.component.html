@@ -1,0 +1,18 @@
+<main class="main grid-item-col-main">
+    <ul>
+      <li>First install the utility:</li>
+      <li>pip install domain-connect-dyndns</li>
+      <li>domain-connect-dyndns setup --domain</li>
+      <li>Then update using:</li>
+      <li>domain-connect-dyndns update --all</li>
+      <li></li>
+      <li>To add a cron job try this:</li>
+      <li>crontab -e</li>
+      <li>*/1 * * * * /usr/bin/flock -n /tmp/ipupdate.lck /usr/local/bin/domain-connect-dyndns update --all --config /root/dyndns/settings.txt</li>
+
+      <li></li>
+
+
+    </ul>
+
+</main>

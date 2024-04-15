@@ -1,1 +1,93 @@
+:host{
+  background: black;
+  display: grid;
+}
+html{
+  background: black;
+}
+body {
+  background-color: black;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: 250px 2px 6fr;
+  grid-template-rows: 120px repeat(16, 20px);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 2px;
+  align-content: center;
+}
+.grid-item-col-left {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgb(45, 41, 25);
+  grid-column: span 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+  padding: 8px;
+  font-size: 20px;
+  text-align: -webkit-left;
+}
+.grid-item-col-mid {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgb(45, 41, 25);
+  grid-row-start: 1;
+
+  grid-column-start: 2;
+  grid-column-end: 3;
+  padding: 8px;
+  font-size: 20px;
+  text-align: left;
+
+}
+.router-wrapper {
+  grid-area: grid-container;
+}
+.grid-item-col-main {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgb(45, 41, 25);
+
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  padding: 8px;
+  font-size: 20px;
+  text-align: left;
+}
+
+.grid-item-footer {
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 1px solid rgb(45, 41, 25);
+
+  color: aliceblue;
+  grid-row-start: 17;
+  padding: 4px;
+  font-size: 12px;
+  text-align: center;
+}
+
+body {
+  background: #111111;
+  text-color: fff;
+  align-content: center;
+}
+a {
+  color: #efe524;
+  text-decoration: none;
+}
+a.active {
+  color: #afa;
+}
+li {
+  color: cornsilk;
+}
+ul {
+  list-style-type: none;
+}
+footer {
+
+  color: #a1a193;
+}
+footer a{
+  color: lightblue;
+}
 /* You can add global styles to this file, and also import other style files */

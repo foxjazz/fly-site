@@ -1,13 +1,24 @@
-import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { Component, OnInit } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import {HttpClientModule} from '@angular/common/http'
+import {RouterLink, RouterLinkActive, RouterOutlet} from '@angular/router';
+
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  imports: [CommonModule, RouterOutlet,  RouterLink, RouterLinkActive],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls: ['./app.component.css']
 })
+//document.body.classList.toggle(“dark-theme”);
 export class AppComponent {
-  title = 'njs';
+  
+
+  
+  title = 'Foxjazz main page';
 }
+
+
+
+
