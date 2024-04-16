@@ -11,6 +11,8 @@ import {TorComponent} from "./tor/tor.component";
 import {UsefulSitesComponent} from "./useful-sites/useful-sites.component";
 import {SoftwareDevelopmentComponent} from "./software-development/software-development.component";
 import {WhereIsTruthComponent} from "./where-is-truth/where-is-truth.component";
+import { CommPassionComponent } from './comm-passion/comm-passion.component';
+import { MyPhilosophyComponent } from './my-philosophy/my-philosophy.component';
 
 
 export const routes: Routes = [{ path: 'weather', component: WeatherComponent },
@@ -20,7 +22,9 @@ export const routes: Routes = [{ path: 'weather', component: WeatherComponent },
   {path: 'useful-sites', component: UsefulSitesComponent},
   {path: 'software-development', component: SoftwareDevelopmentComponent},
   {path: 'where-is-truth', component: WhereIsTruthComponent},
-  {path: 'privacy', component: PrivacyComponent},
+  {path: 'Comm-Passion', component: CommPassionComponent},
+  {path: 'My-Philosophy', component: MyPhilosophyComponent},
+  
   {path: 'linux', component: LinuxComponent,
     children: [
       {

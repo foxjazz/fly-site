@@ -80,6 +80,9 @@ a.active {
 li {
   color: cornsilk;
 }
+p {
+  margin-left: 20px;
+  color: cornsilk}
 ul {
   list-style-type: none;
 }
